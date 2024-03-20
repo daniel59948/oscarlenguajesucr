@@ -1,0 +1,160 @@
+/* INDEX */
+
+* {
+    padding: 0; /* Elimina el relleno interior de todos los elementos, lo que significa que ningún elemento tendrá relleno adicional en su interior.*/
+    margin: 0; /*Elimina los márgenes exteriores de todos los elementos, lo que significa que no habrá espacio entre los elementos y sus elementos adyacentes.*/
+    box-sizing: border-box; /*Modifica el modelo de caja de todos los elementos para incluir el relleno y el borde dentro del ancho y la altura especificados, en lugar de agregarlos al ancho y la altura como ocurre de forma predeterminada. Esto ayuda a garantizar un diseño más predecible y consistente en toda la página.*/
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: rgb(0, 73, 83);
+    color: white;
+    padding: 20px;
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    background-color: rgb(0, 178, 178);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0; /* Agregar espacio interno */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espaciado entre elementos */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo al pasar el cursor */
+  }
+  
+  img {
+  
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; /*Aplica un radio de borde de 50% para redondear los bordes de la imagen, lo que resulta en una forma circular.*/
+      object-fit: cover; /*Escala la imagen para que cubra completamente el área del contenedor sin distorsionar su relación de aspecto, lo que significa que la imagen se recorta para llenar el contenedor, mostrando la parte central de la imagen y ocultando las partes que excedan del contenedor.*/
+  }
+  
+  .contenido{
+      display: flex; /* Establece el contenedor como un contenedor flexible, lo que permite que sus elementos hijos se ajusten automáticamente en una fila o columna, según lo especificado por las propiedades flex-direction y flex-wrap.*/
+      margin: 60px;
+  
+  }
+  
+  .articulos{
+    width: 80%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Agregar espacio interno */
+    border-right: 3px solid #a6a1a1; /* Cambiar el color del borde */
+
+
+  }
+  
+  .secciones{
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      font-size: 1.5em;
+  }
+  
+  .menu-secundario{
+  
+      width: 20%;
+      margin-top: 60px;
+  }
+  
+  .menu-secundario a {
+    display: block;
+    text-align: center;
+    color: rgba(23, 23, 23, 0.749);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+  }
+  
+  .menu-secundario a:hover {
+    background-color: #dcdcdc;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #f2f2f2;
+  }
+  
+
+  /* INICIAR SESION */
+
+  
+  .formulario {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .formulario input[type="password"],
+  .formulario input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #7e7e7e;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formulario input[type="submit"] {
+    background-color:  rgb(0, 73, 83);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color:  rgb(0, 178, 178);
+  }
